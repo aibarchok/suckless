@@ -1,0 +1,51 @@
+#!/bin/sh
+
+# Use neovim for vim when possible.
+command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
+
+# adds verbosity where we like it and shortens common commands.
+alias \
+    X="startx" \
+    nf="fastfetch" \
+    l="ls -l" \
+    la="ls -la" \
+    cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -v" \
+	mkd="mkdir -pv" \
+    S="shred" \
+	yt="yt-dlp --add-metadata -i" \
+	yta="yt -x -f bestaudio/best" \
+	ffmpeg="ffmpeg -hide_banner" \
+  	ka="killall" \
+	g="git" \
+    gc="git clone" \
+    wtrm="watch -n 3 transmission-remote -l" \
+	trm="transmission-remote" \
+    trl="transmission-remote -l" \
+    tra="transmission-remote -a"\
+	YT="youtube-viewer" \
+	rb="doas reboot" \
+    sdn="doas shutdown -h now" \
+	f="$FILE" \
+	e="$EDITOR" \
+	v="$EDITOR" \
+	p="doas emerge -av" \
+    pq="doas emerge -s" \
+    pqd="doas emerge --ask --verbose --update --deep --newuse @world" \
+    pc="doas emerge --depclean --verbose --ask" \
+    pw="doas emerge --ask --deselect" \
+    c="clear" \
+
+# adds color to commands.
+alias \
+	ls="ls -hN --color=auto --group-directories-first" \
+	ccat="highlight --out-format=ansi"
+
+# This alias is important. It enables the `pauseallmpv` command.
+alias mpv="mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)"
+
+# Some other stuff
+alias \
+	magit="nvim -c MagitOnly" \
+	ref="shortcuts >/dev/null; source ~/.config/shortcutrc"

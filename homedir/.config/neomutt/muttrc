@@ -1,0 +1,18 @@
+set folder = "imap://aibarchok@cock.li@mail.cock.li:993"
+
+set smtp_url = "smtp://aibarchok@cock.li@mail.cock.li:587"
+
+set smtp_pass = "2iDdL1JxOGYNw0KD0KQj0Yv0KTjA9jUG"
+set imap_pass = "2iDdL1JxOGYNw0KD0KQj0Yv0KTjA9jUG"
+
+set from = "aibarchok@cock.li"
+set realname = "Aibar Tanatkan"
+
+set spoolfile = "+INBOX"
+set record = "+Sent"
+set trash = "+Trash"
+set postponed = "+Drafts"
+
+mailboxes =INBOX =Sent =Trash =Drafts
+
+source color.muttrc

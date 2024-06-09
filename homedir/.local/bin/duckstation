@@ -1,0 +1,3 @@
+#!/bin/sh
+cd /home/aibar/etc/games
+./DuckStation-x64.AppImage

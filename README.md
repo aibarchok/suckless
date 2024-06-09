@@ -1,4 +1,4 @@
-$${\color{red}Welcome \space \color{lightblue}To \space \color{orange}My}$$ $${\color{green}Dotfiles}$$
+$${\color{red}Welcome \space \color{lightblue}To \space \color{orange}My}$$ \space $${\color{green}Dotfiles}$$
 
 
                           that's my suckless dotfiles and etc!
